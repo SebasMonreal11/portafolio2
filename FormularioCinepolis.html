@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset=" utf-8”/>
+<meta http-equiv="Content-Type" content="text/html; 
+charset=utf-8" />
+<meta name=”description” content=”Ejemplo de HTML5”/>
+<meta name=”keywords” content=”HTML5, CSS3, Javascript”/>
+</head>
+
+<html>
+    <body>
+        <img src="logocinepolis.png" width="250px" alt="Logo" usemap="#mapa1" style="width:200px; float:right;"/>
+
+        <h1 align="center">Formulario online Cinepolis</h1>
+        <style>
+       th, td {
+  padding-left: 30px;
+  padding-right: 110px;
+}
+        </style>
+
+
+        <form method="post" action="" enctype="text/plain">
+            <fieldset> <legend>Información del cliente
+        </legend>
+
+
+        
+
+        <table>
+<thead>
+        <tr>
+            <td><label for="usuario">Nombre:</label></br>
+        <input type="text" name="nombre" id="nombre" maxlength="12"
+        placeholder="nombre" size="10"
+        title="nombre"/><br/></td>
+
+</thead>
+        </tr>
+        <tr>
+            <td><label for="usuario">
+                Nombre de usuario:
+            </label><br/>
+    
+            <input type="text" name="usuario" id="usuario" maxlength="12"
+            placeholder="usuario" size="5"
+            title="nombre de usuario"/><br/></td>
+
+            <td><label for="">Contraseña:</label><br/>
+                <input type="password" name="pass"
+                id="pass" maxlength="15" placeholder="Password" required><br/></td>
+         </tr>
+
+</table>
+
+        </fieldset>
+
+
+
+        <form method="post" action="" enctype="text/plain">
+            <fieldset> <legend>Datos de facturación
+        </legend>
+
+
+        
+
+        <table>
+
+        </tr>
+        <tr>
+            <td><label for="Correo">E-mail:</label><br/>
+                <input type="email" name="correo"
+                id="correo" placeholder="E-mail"><br/></td>
+
+                <td><label for="">RFC:</label><br/>
+                    <input type="text" name="rfc"
+                    id="rfc" placeholder="RFC" maxlength="15" required><br/></td>
+
+         </tr>
+
+
+
+
+        
+
+        <table>
+<thead>
+        <tr>
+            <td><label for="Tipo">Boletos:</label><br/>
+                <input type="text" list="opciones">
+                <datalist id="opciones">
+                <option>Adulto</option>
+                <option>Niño</option>
+                </datalist><br/></td><br/>
+
+                <td><label for="califica">Cantidad de boletos</label>
+        <input type="range" min="1" max="10" value="1"/>10<br/></td>
+
+        
+        <td><label for="Talla">Metodo de pago:</label><br/>
+             <input type="checkbox" name="Tarjeta de credito" value="Tarjeta de credito"/>Tarjeta de credito<br/>
+             <input type="checkbox" name="Tarjeta de debito" value="Tarjeta de debito"/>Tarjeta de debito<br/>
+             <input type="checkbox" name="Efectivo" value="Efectivo"/>Efectivo<br/>
+              </td>
+
+        
+
+              <td>
+                <label for="fechav">Fecha de la venta</label>
+                <input type="date" name="fechav"
+                id="fechav" placeholder="Fecha de la venta"><br/>
+            </td>
+            
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+            
+        
+</tr>
+
+<tr>
+    <td><label for="sugiere">Sugerencias</label>
+        <textarea name="sugiere" cols="25" rows="10"></textarea></td><br/>
+
+        <td></td>
+        <td></td>
+        <td><input type="submit" name="enviar"
+            id="enviar" value="Enviar datos">
+            <input type="reset" name="borrar"
+                id="borrar" value="Borrar datos"><br/></td>
+</tr>
+
+</thead>
+            
+         </tr>
+
+</table>
+
+        </fieldset>
+
+
+
+
+    </body>
+</html>
