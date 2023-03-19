@@ -3,6 +3,7 @@ table{
     border-collapse: collapse;
     margin:15px;
     background-color: lightskyblue;
+    align="center";
 }
 
 tr, td{
