@@ -1,0 +1,31 @@
+table{
+    width: 75%;
+    border-collapse: collapse;
+    margin:15px;
+    background-color: lightskyblue;
+}
+
+td{
+    height: 50px;
+    vertical-align:middle;
+    text-align:center;
+    padding:5px;
+}
+
+.texto{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 20px;
+    text-align: center; 
+    }
+
+    h2{
+        color: violet;
+        text-decoration: underline dotted;
+    
+    }
+
+    h3{
+        color:darkviolet;
+        text-decoration: underline dotted;
+    
+    }
