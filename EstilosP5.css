@@ -5,11 +5,12 @@ table{
     background-color: lightskyblue;
 }
 
-td{
+tr, td{
     height: 50px;
     vertical-align:middle;
     text-align:center;
     padding:5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .texto{
