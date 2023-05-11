@@ -52,34 +52,41 @@ function califica()
 <form>
 <div>
 	
-	<ul>
+	<ul> /*Añadimos preguntas con casillas de tipo radio con la respuesta correcta evaluada en 5 puntos*/
 
-		<li>Pregunta 1</li>
-		<input type="radio" name="r1" id="r1" value="5"/>Respuesta 1 Pregunta 1<br/>
-		<input type="radio" name="r1" id="r1" value="0"/>Respuesta 2 Pregunta 1<br/>
-		<input type="radio" name="r1" id="r1" value="0"/>Respuesta 3 Pregunta 1<br/>
-		<input type="radio" name="r1" id="r1" value="0"/>Respuesta 4 Pregunta 1<br/>
+		<li>¿Por medio de que se unen los aminoácidos en las proteínas?</li>
+		<input type="radio" name="r1" id="r1" value="5"/>Enlaces peptídicos<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Puentes de hidrogeno<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Enlaces sulfuro<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Enlaces de fosforo<br/>
 		
-		<li>Pregunta 2</li>
-		<input type="radio" name="r2" id="r2" value="5"/>Respuesta 1 Pregunta 2<br/>
-		<input type="radio" name="r2" id="r2" value="0"/>Respuesta 2 Pregunta 2<br/>
-		<input type="radio" name="r2" id="r2" value="0"/>Respuesta 3 Pregunta 2<br/>
-		<input type="radio" name="r2" id="r2" value="0"/>Respuesta 4 Pregunta 2<br/>
+		<li>¿Es cierto que los aminoácidos se encuentran de manera covalente a través de enlaces peptídicos?</li>
+		<input type="radio" name="r2" id="r2" value="5"/>Verdadero<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Falso<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>No se menciona<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Solo en ciertos casos<br/>
 
-		<li>Pregunta 3</li>
-		<input type="radio" name="r3" id="r3" value="5"/>Respuesta 1 Pregunta 3<br/>
-		<input type="radio" name="r3" id="r3" value="0"/>Respuesta 2 Pregunta 3<br/>
-		<input type="radio" name="r3" id="r3" value="0"/>Respuesta 3 Pregunta 3<br/>
-		<input type="radio" name="r3" id="r3" value="0"/>Respuesta 4 Pregunta 3<br/>
+		<li>Los enlaces peptídicos son resistentes?</li>
+		<input type="radio" name="r3" id="r3" value="5"/>Si en ciertos casos como el calor y altas concentraciones de urea<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>No<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Solo ante el calor<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Solo ante el agua<br/>
 
-        <li>Pregunta 4</li>
-		<input type="radio" name="r4" id="r4" value="5"/>Respuesta 1 Pregunta 4<br/>
-		<input type="radio" name="r4" id="r4" value="0"/>Respuesta 2 Pregunta 4<br/>
-		<input type="radio" name="r4" id="r4" value="0"/>Respuesta 3 Pregunta 4<br/>
-		<input type="radio" name="r4" id="r4" value="0"/>Respuesta 4 Pregunta 4<br/>
+        <li>¿Cuanto es el mínimo de aminoácidos necesarios para crear una proteína?</li>
+		<input type="radio" name="r4" id="r4" value="5"/>50<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>4<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>1000<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>500<br/>
+		
+	<li>¿Cómo se llama a cada componente de un aminoácido porque es la porción del aminoácido que resta después que los átomos de agua se pierden al formar un enlace peptídico?</li>
+		<input type="radio" name="r4" id="r4" value="5"/>Residuos<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Restos<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Desechos<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Restantes<br/>
 	</ul>
 	
 </div>
+	/*Dependiendo del total de los puntos obtenidos se califica en la funcion y se añade el comentario*/
 <input type="button" value="Calificar" onclick="califica()">
 </form>
 <p></p>
