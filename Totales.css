@@ -14,16 +14,28 @@ html {
   li, p {
     line-height: 1.5;
   }
-  
-  
-  dd, dt {
-    line-height: 1.5;
-  }
-  
-  dt {
-    font-weight: bold;
-  }
-  
-  dd {
-    margin-bottom: 1.5rem;
-  }
+ 
+* {
+  margin: 0px;
+  padding: 0px;
+  font: 16px;
+  border: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #ccc;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  display: table;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
