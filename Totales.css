@@ -1,11 +1,3 @@
-html {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 10px;
-}
-
-h2 {
-  font-size: 2rem;
-}
 
 ul,ol,dl,p {
   font-size: 1.5rem;
@@ -13,6 +5,33 @@ ul,ol,dl,p {
 
 li, p {
   line-height: 1.5;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font: 16px;
+  border: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  background: #ccc;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  display: table;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 
