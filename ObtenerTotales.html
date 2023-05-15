@@ -6,7 +6,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+	<script src="html2pdf.bundle.min.js"></script>
+	<script src="script.js"></script>
 </head>
 	
 <script>
@@ -43,19 +44,6 @@ function califica()
         	if(total<=15)
         	document.getElementById("comentario").innerHTML="Estudia un poco más";
     }
-	
-	function generatePDF() {
-    // Crea un objeto jsPDF
-    var doc = new jsPDF();
-
-    // Agrega el contenido de la sección "contiene" al PDF
-    doc.fromHTML(document.getElementById("contiene"), 15, 15, {
-      'width': 170
-    });
-
-    // Guarda el PDF en el disco
-    doc.save("documento.pdf");
-  }
 
  
 </script>
