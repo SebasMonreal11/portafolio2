@@ -48,13 +48,13 @@ function califica()
     // Crea un objeto jsPDF
     var doc = new jsPDF();
 
-    // Agrega el contenido de la sección "content" al PDF
-    doc.fromHTML(document.getElementById('contiene'), 15, 15, {
+    // Agrega el contenido de la sección "contiene" al PDF
+    doc.fromHTML(document.getElementById("contiene"), 15, 15, {
       'width': 170
     });
 
     // Guarda el PDF en el disco
-    doc.save('documento.pdf');
+    doc.save("documento.pdf");
   }
 
  
@@ -109,7 +109,7 @@ function califica()
 <p id="comentario">   </p>
 <iframe frameborder="0" width="600" height="500"></iframe>
 </div>
-<input type="button" value="pdf" onclick="generatePDF()">
+<input type="button" value="Generar pdf" onclick="generatePDF()">
 
 
 </body>
