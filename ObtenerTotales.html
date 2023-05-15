@@ -3,12 +3,12 @@
 <head>
 	<title>Obtener totales del formulario</title>
     <link rel="stylesheet" href="Totales.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
-</head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+</head>
+	
 <script>
 
 	/* Declaramos la variable para calificar el total de preguntas correctas*/
@@ -103,6 +103,7 @@ function califica()
 </div>
 	/*Dependiendo del total de los puntos obtenidos se califica en la funcion y se añade el comentario*/
 <input type="button" value="Calificar" onclick="califica()">
+<input type="button" value="Generar pdf" onclick="generatePDF()">
 </form>
 <p></p>
 <p id="total">   </p>
@@ -110,7 +111,7 @@ function califica()
 <iframe frameborder="0" width="600" height="500"></iframe>
 	
 </div>
-<input type="button" value="Generar pdf" onclick="generatePDF()">
+
 
 
 
