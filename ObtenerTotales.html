@@ -3,6 +3,7 @@
 <head>
 	<title>Obtener totales del formulario</title>
     <link rel="stylesheet" href="Totales.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
@@ -94,5 +95,22 @@ function califica()
 <p id="comentario">   </p>
 <iframe frameborder="0" width="600" height="500"></iframe>
 </div>
+	
+	<button onclick="generatePDF()">Generar PDF</button>
+
+<script>
+  function generatePDF() {
+    // Crea un objeto jsPDF
+    var doc = new jsPDF();
+
+    // Agrega el contenido de la sección "content" al PDF
+    doc.fromHTML(document.getElementById('content'), 15, 15, {
+      'width': 170
+    });
+
+    // Guarda el PDF en el disco
+    doc.save('documento.pdf');
+  }
+</script>
 </body>
 </html>
