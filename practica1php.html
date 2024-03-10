@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="utf-8">
+    </head>
+
+    <style>
+        table {
+  width=90%
+  border-collapse:separate;
+  border-spacing:10px 3px;
+}
+td {
+   width: 25%;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="color"] {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 5px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-weight: bold;
+    color: #666;
+  }
+
+  h1 {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .fieldset {
+    position: relative;
+    border: 1px solid #000;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.fieldset .legend {
+    background: #fff;
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    padding: 0 20px;
+    color: #000;
+    overflow: visible;
+}
+    </style>
+    <body>
+
+    <h1>Practica 1 php</h1>
+
+    <form method="post" action="leeinfo.php">
+        <fieldset>
+            <legend>Informacion general</legend>
+
+            <table>
+        <tr>
+            <td>
+            <label for="Nombre">
+                Nombre:
+            </label>
+        </td>
+        <td>
+            <label for="Ap">
+                Apellido paterno:
+            </label>
+        </td>
+        <td>
+            <label for="Am">
+                Apellido materno:
+            </label>
+        </td>
+        </tr>
+
+        <tr>
+            <th>
+                <input type="text" name="Nombre" id="Nombre" nombre="name" placeholder="Nombre"> <br/>
+            </th>
+            <th>
+                <input type="text" name="Ap" id="Ap" placeholder="Apellido paterno"> <br/>
+            </th>
+            <th>
+                <input type="text" name="Am" id="Am" placeholder="Apellido materno"> <br/>
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+            <label for="Nombre de usuario">
+                Nombre de usuario:
+            </label>
+        </td>
+        <td>
+            <label for="Contrasena">
+                Contraseña:
+            </label>
+        </td>
+        <td>
+            <label for="Fecha de nac">
+                Fecha de nacimiento:
+            </label>
+        </td>
+        </tr>
+
+        <tr>
+            <th>
+                <input type="text" name="Nombre de usuario" id="Nombre_de_usuario" placeholder="Usuario"> <br/>
+            </th>
+
+            <th>
+                <input type="text" name="Contrasena" id="Contrasena" placeholder="Password"> <br/>
+            </th>
+<th>
+    <input class="form-control datetimepicker" type="date" id="fecha_nacimiento" name="fecha_nacimiento"/>
+</th>
+
+
+
+
+
+
+        </tr>
+            <br/>
+
+            
+
+
+    </table>
+</fieldset>
+    <fieldset>
+        <legend>Datos de facturación</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="País">
+                        Pais
+                    </label>
+                </td>
+
+                <td>
+                    <label for="Ciudad">
+                        Ciudad
+                    </label>
+                </td>
+
+                <td>
+                    <label for="Calle">
+                        Calle
+                    </label>
+                </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                    <select name="Pais" id="Pais" multiple>
+
+                        <option value="Mexico">Mexico</option>
+
+                        <option value="Canada">Canada</option>
+
+                        <option value="E.U.A.">E.U.A.</option>
+
+                        <option value="Francia">Francia</option>
+
+                        <option value="España">España</option>
+
+                      </select>
+                      </td>
+
+                      <td>
+                      <select name="Ciudad" id="Ciudad" multiple>
+
+                        <option value="San Luis Potosi">San Luis Potosi</option>
+
+                        <option value="Matehuala">Matehuala</option>
+
+                        <option value="Cd. Valles">Cd Valles</option>
+
+                        <option value="Ebano">Ebano</option>
+
+                        <option value="Charcas">Charcas</option>
+
+                      </select>
+
+                      </td>
+
+                      <td>
+                        <input type="text" name="Calle" id="Calle" placeholder="Calle">
+                      </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <label for="Numero de casa">
+                        Numero de casa
+                    </label>
+                </td>
+                <td>
+                    <label for="Colonia">
+                        Colonia
+                    </label>
+                </td>
+                <td>
+                    <label for="Email">
+                        E-mail
+                    </label>
+                </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <input type="text" name="Numero de casa" id="Numero_de_casa" placeholder="Numero exterior"> <br/>
+                    </th>
+                    <th>
+                        <input type="text" name="Colonia" id="Colonia" placeholder="Colonia"> <br/>
+                    </th>
+                    <th>
+                        <input type="text" name="Email" id="Email" placeholder="E-mail"> <br/>
+                    </th>
+                </tr>
+
+
+                <tr>
+                    <td>
+                    <label for="RFC">
+                        R.F.C.
+                    </label>
+                </td>
+                <td>
+                    <label for="CP">
+                        C.P.
+                    </label>
+                </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <input type="text" name="RFC" id="RFC" placeholder="R.F.C."> <br/>
+                    </th>
+                    <th>
+                        <input type="text" name="CP" id="CP" placeholder="Codigo postal"> <br/>
+                    </th>
+                    <th>
+                        <input type="submit" name="envio" id="envio" value="Enviar formulario">
+                    </th>
+                    <th><p><button type="reset">Reestablecer</button></p></th>
+                </tr>
+
+
+
+
+
+
+        </table>
+
+    </fieldset>
+</form>
+
+    
+</body>
+</html>
